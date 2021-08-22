@@ -40,7 +40,7 @@ func ServeCommand() *cobra.Command {
 	o := &HostServerOptions{}
 	cmd := cobra.Command{
 		Use:   "web",
-		Short: "start the host-apply host creation server",
+		Short: "start the server",
 		Run: func(cmd *cobra.Command, args []string) {
 			startUserServer(o)
 		},
